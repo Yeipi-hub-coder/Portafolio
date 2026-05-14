@@ -1,10 +1,7 @@
-/* ============================================================
-   PORTAFOLIO - JUAN PABLO BELTRAN JIMENEZ
-   style.css  |  Modifica con libertad. Secciones etiquetadas.
-   ============================================================ */
 
 /* ── 1. VARIABLES Y TOKENS DE DISEÑO ── */
 :root {
+  /* Paleta principal  */
   --bg-deep:       #060d1f;
   --bg-mid:        #0a1628;
   --bg-card:       rgba(12, 26, 58, 0.6);
@@ -116,6 +113,7 @@ button { cursor: pointer; font-family: inherit; }
   transition: transform var(--dur-mid) var(--ease);
 }
 
+/* Efecto glow sutil en el borde derecho del sidebar */
 .sidebar::after {
   content: '';
   position: absolute;
@@ -704,6 +702,7 @@ button { cursor: pointer; font-family: inherit; }
   flex-shrink: 0;
 }
 
+/* Colores de íconos de lenguajes */
 .skill-js   { background: #f7df1e; color: #000; }
 .skill-py   { background: #3b82f6; color: #fff; }
 .skill-html { background: #e34c26; color: #fff; }
@@ -784,6 +783,7 @@ button { cursor: pointer; font-family: inherit; }
   letter-spacing: 0.04em;
 }
 
+/* Colores de nivel */
 .level-native   { background: rgba(0, 229, 255, 0.12); color: var(--accent); }
 .level-advanced { background: rgba(45, 140, 240, 0.15); color: var(--blue-bright); }
 .level-intermediate { background: rgba(45,100,200,0.15); color: #a0c4ff; }
@@ -1006,6 +1006,7 @@ button { cursor: pointer; font-family: inherit; }
 @media (max-width: 768px) {
   :root { --sidebar-w: 260px; }
 
+  /* Sidebar oculto por defecto */
   .sidebar {
     transform: translateX(-100%);
     z-index: 150;

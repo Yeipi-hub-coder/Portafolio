@@ -6,9 +6,9 @@
   <title>Juan Pablo Beltran Jimenez · Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
+  <!-- Tipografías modernas y distintas -->
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  
+  <!-- Iconos SVG inline - no dependencias externas -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,10 +16,12 @@
   <!-- Canvas para partículas de fondo -->
   <canvas id="bg-canvas"></canvas>
 
-  
+  <!-- ============================================================
+       SIDEBAR IZQUIERDO FIJO
+       ============================================================ -->
   <aside class="sidebar" id="sidebar">
 
-    
+    <!-- Botón hamburguesa (solo mobile) -->
     <button class="hamburger" id="hamburger" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
@@ -28,7 +30,6 @@
 
       <!-- Foto de perfil pequeña -->
       <div class="sidebar-avatar">
-        
         <img
           src="./media/WhatsApp Image 2026-05-12 at 22.05.06.jpeg"
           alt="Juan Pablo Beltran"
@@ -41,7 +42,7 @@
       <!-- Nombre en sidebar -->
       <p class="sidebar-name">Juan Pablo<br /><span>Beltran Jimenez</span></p>
 
-      
+      <!-- Línea divisoria decorativa -->
       <div class="sidebar-divider"></div>
 
       <!-- Menú de navegación vertical -->
@@ -49,7 +50,7 @@
         <ul>
           <!-- Cada <li> corresponde a una sección. Ajusta el href y el texto si renombras secciones -->
           <li><a href="#inicio"    class="nav-link active" data-section="inicio">
-            <span class="nav-icon">
+            <span class="nav-icon"><!-- ícono inicio -->
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </span>
             <span class="nav-label">Inicio</span>
@@ -103,16 +104,18 @@
         <span>© 2026</span>
       </div>
 
-    </div>
+    </div><!-- /sidebar-inner -->
   </aside>
 
   <!-- Overlay para cerrar sidebar en mobile -->
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-  
+  <!-- ============================================================
+       CONTENIDO PRINCIPAL
+       ============================================================ -->
   <main class="main-content" id="main-content">
 
-    
+    <!-- =================== SECCIÓN INICIO =================== -->
     <section id="inicio" class="section section-hero">
       <div class="hero-container">
 
@@ -120,7 +123,6 @@
         <div class="hero-avatar-wrapper">
           <div class="hero-avatar-ring"></div>
           <div class="hero-avatar-ring ring2"></div>
-          
           <img
             src="./media/WhatsApp Image 2026-05-12 at 22.05.06.jpeg"
             alt="Juan Pablo Beltran Jimenez"
@@ -133,14 +135,13 @@
         <!-- Texto principal -->
         <div class="hero-text">
           <p class="hero-greeting reveal-text">Hola, soy</p>
-          
+          <!-- === NOMBRE  === -->
           <h1 class="hero-name">
             <span class="name-line">Juan Pablo</span>
             <span class="name-line accent-line">Beltran Jimenez</span>
           </h1>
 
-          
-          
+          <!-- Subtítulo animado con typewriter -->
           <p class="hero-subtitle">
             <span class="typewriter-prefix">Soy </span>
             <span class="typewriter" id="typewriter"></span>
@@ -162,7 +163,7 @@
       </a>
     </section>
 
-    
+    <!-- =================== SECCIÓN QUIÉN SOY =================== -->
     <section id="quien-soy" class="section">
       <div class="section-container">
 
@@ -172,46 +173,46 @@
           <div class="section-line"></div>
         </header>
 
-        
+        <!-- === TARJETA SOBRE MÍ  === -->
         <div class="about-card glass-card reveal-up">
           <div class="about-card-accent"></div>
 
           <div class="about-content">
             <div class="about-text">
-              
+              <!-- === PÁRRAFO 1  === -->
               <p class="about-paragraph">
                 Soy un desarrollador de software apasionado por crear soluciones digitales elegantes y funcionales.
                 Me especializo en el desarrollo web moderno, combinando tecnología y diseño para construir
                 experiencias que realmente importan.
               </p>
 
-              
+              <!-- === PÁRRAFO 2 === -->
               <p class="about-paragraph">
                 Con experiencia en desarrollo frontend y backend, me enfoco en escribir código limpio,
                 escalable y bien documentado. Creo firmemente que la atención al detalle marca la diferencia
                 entre un buen producto y uno excepcional.
               </p>
 
-              
+              <!-- === PÁRRAFO 3  === -->
               <p class="about-paragraph">
                 Cuando no estoy programando, me gusta aprender sobre nuevas tecnologías, explorar el diseño de interfaces y compartir conocimientos con la comunidad.
                 Mi objetivo es seguir creciendo como profesional y contribuir a proyectos que tengan un impacto positivo.
               </p>
             </div>
 
-            
+            <!-- Estadísticas rápidas -->
             <div class="about-stats">
-              
+              <!-- === STAT 1 === -->
               <div class="stat-item">
                 <span class="stat-number" data-target="1">0</span>
                 <span class="stat-label">Años de experiencia</span>
               </div>
-              
+              <!-- === STAT 2 === -->
               <div class="stat-item">
                 <span class="stat-number" data-target="8">0</span>
                 <span class="stat-label">Proyectos completados</span>
               </div>
-              
+              <!-- === STAT 3 === -->
               <div class="stat-item">
                 <span class="stat-number" data-target="6">0</span>
                 <span class="stat-label">Lenguajes Estudiados</span>
@@ -223,7 +224,7 @@
       </div>
     </section>
 
-    
+    <!-- =================== SECCIÓN QUÉ HAGO =================== -->
     <section id="que-hago" class="section">
       <div class="section-container">
 
@@ -235,7 +236,7 @@
 
         <div class="services-grid">
 
-          
+          <!-- === SERVICIO 1  === -->
           <div class="service-card glass-card reveal-up">
             <div class="service-icon-wrap">
               <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -250,7 +251,7 @@
             <div class="service-card-glow"></div>
           </div>
 
-          
+          <!-- === SERVICIO 2 === -->
           <div class="service-card glass-card reveal-up" style="--delay: 0.1s">
             <div class="service-icon-wrap">
               <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -265,7 +266,7 @@
             <div class="service-card-glow"></div>
           </div>
 
-          
+          <!-- === SERVICIO 3 === -->
           <div class="service-card glass-card reveal-up" style="--delay: 0.2s">
             <div class="service-icon-wrap">
               <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -279,8 +280,11 @@
             </p>
             <div class="service-card-glow"></div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          
+    <!-- =================== SECCIÓN LENGUAJES =================== -->
     <section id="lenguajes" class="section">
       <div class="section-container">
 
@@ -292,8 +296,7 @@
 
         <div class="skills-grid">
 
-          
-          
+          <!-- === SKILL  === -->
 
           <div class="skill-card glass-card reveal-up" data-level="88">
             <div class="skill-header">
@@ -371,7 +374,44 @@
               <div class="skill-bar-fill" style="--pct: 80%; --bar-color: #61dafb;"></div>
             </div>
           </div>
-          
+
+          <div class="skill-card glass-card reveal-up" data-level="70" style="--delay:0.4s">
+            <div class="skill-header">
+              <span class="skill-icon" style="background:#61dafb;color:#000;">MS</span>
+              <span class="skill-name">MySql</span>
+              <span class="skill-pct">50%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 50%; --bar-color: #61dafb;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal-up" data-level="70" style="--delay:0.4s">
+            <div class="skill-header">
+              <span class="skill-icon" style="background:#61dafb;color:#000;">GH</span>
+              <span class="skill-name">Github</span>
+              <span class="skill-pct">100%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 100%; --bar-color: #61dafb;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal-up" data-level="70" style="--delay:0.4s">
+            <div class="skill-header">
+              <span class="skill-icon" style="background:#61dafb;color:#000;">DB</span>
+              <span class="skill-name">Bases de datos</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--pct: 60%; --bar-color: #61dafb;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== SECCIÓN IDIOMAS =================== -->
     <section id="idiomas" class="section">
       <div class="section-container">
 
@@ -383,8 +423,7 @@
 
         <div class="languages-grid">
 
-          
-          
+          <!-- === IDIOMA 1 === -->
           <div class="lang-card glass-card reveal-up">
             <div class="lang-flag">🇨🇴</div>
             <div class="lang-info">
@@ -400,7 +439,7 @@
             </div>
           </div>
 
-          
+          <!-- === IDIOMA 2 === -->
           <div class="lang-card glass-card reveal-up" style="--delay:0.15s">
             <div class="lang-flag">🇺🇸</div>
             <div class="lang-info">
@@ -415,8 +454,11 @@
               <span class="dot"></span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          
+    <!-- =================== SECCIÓN REDES SOCIALES =================== -->
     <section id="redes" class="section section-last">
       <div class="section-container">
 
@@ -432,7 +474,7 @@
 
         <div class="social-grid">
 
-          
+          <!-- === LINKEDIN  === -->
           <a href="https://www.linkedin.com/in/juan-pablo-beltr%C3%A1n-jim%C3%A9nez-51b8ba3b6/" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" aria-label="LinkedIn">
             <div class="social-icon-wrap linkedin-wrap">
               <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
@@ -441,7 +483,6 @@
             </div>
             <div class="social-info">
               <h3 class="social-name">LinkedIn</h3>
-              
               <p class="social-handle">@juan-pablo-beltran-jimenez</p>
             </div>
             <span class="social-arrow">
@@ -450,7 +491,7 @@
             <div class="social-card-glow"></div>
           </a>
 
-          
+          <!-- === GITHUB  === -->
           <a href="https://github.com/JP-hub-coder" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--delay:0.15s" aria-label="GitHub">
             <div class="social-icon-wrap github-wrap">
               <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
@@ -459,7 +500,6 @@
             </div>
             <div class="social-info">
               <h3 class="social-name">GitHub</h3>
-              
               <p class="social-handle">@JP-hub-coder</p>
             </div>
             <span class="social-arrow">
@@ -467,15 +507,19 @@
             </span>
             <div class="social-card-glow"></div>
           </a>
+        </div>
 
-          
+
+        <!-- Email directo -->
+        <div class="email-box glass-card reveal-up">
+          <p class="email-label">O escríbeme directamente a</p>
           <a href="mailto:juanpablobj.14@gmail.com" class="email-link">juanpablobj.14@gmail.com</a>
         </div>
 
       </div>
     </section>
 
-  </main>
+  </main><!-- /main-content -->
 
 </body>
 <script src="script.js"></script>

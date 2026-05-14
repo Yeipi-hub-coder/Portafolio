@@ -1,10 +1,10 @@
-/* ── 1. TYPEWRITER ────────────────────────────────────────── */
+
+/* ── 1. TYPEWRITER  ────────────────────────────────────────── */
 const roles = [
-  'Desarrollador Web',       
-  'Automatizador de Procesos', 
-  'Diseñador UI/UX',          
-  'Problem Solver',            
-  // 'Freelancer',
+  'Desarrollador Web',       // Rol 1
+  'Automatizador de Procesos', // Rol 2
+  'Diseñador UI/UX',          // Rol 3
+  'Problem Solver',            // Rol 4
 ];
 
 (function initTypewriter() {
@@ -41,8 +41,7 @@ const roles = [
 
 
 /* ── 2. CANVAS PARTÍCULAS DE FONDO ──────────────────────────
-   Partículas flotantes suaves con conexiones.
-   Se puede ajustar con PARTICLE_COUNT, SPEED y SIZE al gusto.
+   Partículas flotantes suaves con conexiones
    ─────────────────────────────────────────────────────────── */
 (function initParticles() {
   const canvas = document.getElementById('bg-canvas');
@@ -265,8 +264,6 @@ const roles = [
 
 /* ── 7. CONTADOR ANIMADO (estadísticas) ──────────────────────
    Anima los números en la sección "Quién Soy".
-   Edita el atributo data-target en el HTML para cambiar
-   el número final.
    ─────────────────────────────────────────────────────────── */
 (function initCounters() {
   const counters = document.querySelectorAll('.stat-number[data-target]');
